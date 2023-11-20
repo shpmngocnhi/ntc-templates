@@ -5,7 +5,8 @@ Value DESCRIPTION (\S.*?)
 
 Start
   ^Interface\s+Description\s*$$ -> Begin
-
+  ^Port\s+Type\s+Speed\s+Description\s*$$ -> Begin
+  
 Begin
   ^-+
   ^Port\s+Type\s+Speed\s+Description\s*$$
